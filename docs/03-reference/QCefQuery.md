@@ -1,3 +1,7 @@
+---
+title: QCefQuery
+---
+
 # class `QCefQuery` {#class_q_cef_query}
 
 Represents the query request sent from the web content(Javascript)

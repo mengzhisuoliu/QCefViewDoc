@@ -1,3 +1,7 @@
+---
+title: QCefView
+---
+
 # class `QCefView` {#class_q_cef_view}
 
 ```

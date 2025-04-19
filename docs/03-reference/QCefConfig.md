@@ -1,3 +1,7 @@
+---
+title: QCefConfig
+---
+
 # class `QCefConfig` {#class_q_cef_config}
 
 Represents the CEF setting. For more details please refer to: [https://bitbucket.org/chromiumembedded/cef/wiki/GeneralUsage.md#markdown-header-cefsettings](https://bitbucket.org/chromiumembedded/cef/wiki/GeneralUsage.md#markdown-header-cefsettings).
@@ -14,6 +18,8 @@ Represents the CEF setting. For more details please refer to: [https://bitbucket
 `public void `[`addCommandLineSwitchWithValue`](#class_q_cef_config_1a141daa8b02526d190e462cbcb38dbab5)`(const QString & smitch, const QString & v)`                  | Adds a switch with value to the commandline args used to initialize the CEF.
 `public void `[`setWindowlessRenderingEnabled`](#class_q_cef_config_1af6041bcae9fcf72ea47ffc47d62e5a96)`(const bool enabled)`                  | Sets the flag to enable/disable OSR mode.
 `public const QVariant `[`WindowlessRenderingEnabled`](#class_q_cef_config_1a1390692449458f6bd774d024e41ae945)`() const`                  | Gets the OSR mode flag.
+`public void `[`setCommandLinePassthroughDisabled`](#class_q_cef_config_1aefbb555266937e769ed2102df41b0599)`(const bool disabled)`                  | Sets the flag to disable the command line pass through.
+`public const QVariant `[`commandLinePassthroughDisabled`](#class_q_cef_config_1a892715bebd8dc71e5acb0be17bfff43d)`() const`                  | Gets the flag of disable command line pass through.
 `public void `[`setBrowserSubProcessPath`](#class_q_cef_config_1a3fca1b7b72f37f800278c743b74f1b82)`(const QString & path)`                  | Sets the browser subprocess path.
 `public const QString `[`browserSubProcessPath`](#class_q_cef_config_1a2b15417d6066479256fc514721cd0474)`() const`                  | Gets the browser subprocess path.
 `public void `[`setResourceDirectoryPath`](#class_q_cef_config_1a0690fb1cb1a3cd87c44be340b6308f42)`(const QString & path)`                  | Sets the resource directory path.
@@ -99,6 +105,22 @@ Sets the flag to enable/disable OSR mode.
 ### `public const QVariant `[`WindowlessRenderingEnabled`](#class_q_cef_config_1a1390692449458f6bd774d024e41ae945)`() const` {#class_q_cef_config_1a1390692449458f6bd774d024e41ae945}
 
 Gets the OSR mode flag.
+
+#### Returns
+The flag indicates the enable/disable of OSR mode
+
+---
+### `public void `[`setCommandLinePassthroughDisabled`](#class_q_cef_config_1aefbb555266937e769ed2102df41b0599)`(const bool disabled)` {#class_q_cef_config_1aefbb555266937e769ed2102df41b0599}
+
+Sets the flag to disable the command line pass through.
+
+#### Parameters
+* `disabled` True to disable the command line pass through, false to enable
+
+---
+### `public const QVariant `[`commandLinePassthroughDisabled`](#class_q_cef_config_1a892715bebd8dc71e5acb0be17bfff43d)`() const` {#class_q_cef_config_1a892715bebd8dc71e5acb0be17bfff43d}
+
+Gets the flag of disable command line pass through.
 
 #### Returns
 The flag indicates the enable/disable of OSR mode

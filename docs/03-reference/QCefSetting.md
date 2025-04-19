@@ -1,3 +1,7 @@
+---
+title: QCefSetting
+---
+
 # class `QCefSetting` {#class_q_cef_setting}
 
 Represents the settings for individual browser.
@@ -62,6 +66,8 @@ Represents the settings for individual browser.
 `public const QVariant `[`webGL`](#class_q_cef_setting_1aca84c981db4fcc2cf6aa3ece7c44973c)`() const`                  | Gets whether to enable or disable webGL.
 `public void `[`setBackgroundColor`](#class_q_cef_setting_1a6dbd7b1da3a151294e8bf020a16687be)`(const QColor & value)`                  | Sets the background color.
 `public const QVariant `[`backgroundColor`](#class_q_cef_setting_1a9db276640c98e1d5d38290e06ae17d1a)`() const`                  | Gets the background color.
+`public void `[`setHardwareAcceleration`](#class_q_cef_setting_1afdb320899b859e7781458a281a9dafbe)`(const bool value)`                  | #### Parameters
+`public const bool `[`hardwareAcceleration`](#class_q_cef_setting_1a7509581e3295f2585394329a1adec734)`() const`                  | #### Returns
 `private QScopedPointer< QCefSettingPrivate > `[`d_ptr`](#class_q_cef_setting_1ab47508d9301964f7c77c49150d942813)                  | 
 
 ## Members
@@ -508,6 +514,17 @@ Gets the background color.
 
 #### Returns
 The color
+
+---
+### `public void `[`setHardwareAcceleration`](#class_q_cef_setting_1afdb320899b859e7781458a281a9dafbe)`(const bool value)` {#class_q_cef_setting_1afdb320899b859e7781458a281a9dafbe}
+
+#### Parameters
+* `value`
+
+---
+### `public const bool `[`hardwareAcceleration`](#class_q_cef_setting_1a7509581e3295f2585394329a1adec734)`() const` {#class_q_cef_setting_1a7509581e3295f2585394329a1adec734}
+
+#### Returns
 
 ---
 ### `private QScopedPointer< QCefSettingPrivate > `[`d_ptr`](#class_q_cef_setting_1ab47508d9301964f7c77c49150d942813) {#class_q_cef_setting_1ab47508d9301964f7c77c49150d942813}

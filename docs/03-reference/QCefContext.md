@@ -1,3 +1,7 @@
+---
+title: QCefContext
+---
+
 # class `QCefContext` {#class_q_cef_context}
 
 ```

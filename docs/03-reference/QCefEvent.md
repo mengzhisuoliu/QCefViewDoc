@@ -1,3 +1,7 @@
+---
+title: QCefEvent
+---
+
 # class `QCefEvent` {#class_q_cef_event}
 
 Represents the event sent from native context(C/C++ code) to the web context(javascript)

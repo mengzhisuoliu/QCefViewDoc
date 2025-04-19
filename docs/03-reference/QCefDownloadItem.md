@@ -1,3 +1,7 @@
+---
+title: QCefDownloadItem
+---
+
 # class `QCefDownloadItem` {#class_q_cef_download_item}
 
 Represents the download item.

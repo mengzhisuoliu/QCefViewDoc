@@ -5,44 +5,43 @@ name: Build And Deploy QCefView Doc Site
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Project
-      uses: actions/checkout@v3
+      - name: Checkout Project
+        uses: actions/checkout@v3
 
-    - name: Choose Node.js Version
-      uses: actions/setup-node@v3
-      with:
-        node-version: 16
-        cache: 'npm'
+      - name: Choose Node.js Version
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: "npm"
 
-    - name: Initialize Project
-      run: npm ci
+      - name: Initialize Project
+        run: npm ci
 
-    - name: Build Project
-      run: npm run build --if-present
-    
-    - name: Publish to gh-pages
-      if: github.event_name != 'pull_request'
-      uses: cpina/github-action-push-to-another-repository@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.PUBLISH_GHPAGES_SECRET }}
-      with:
-        # Source directory from the origin directory
-        source-directory: 'build'
-        # Name of the destination username/organization
-        destination-github-username: CefView
-        # Destination repository
-        destination-repository-name: QCefView
-        # Email for the git commit
-        user-email: sheentianshen@gmail.com
-        # [Optional] set target branch name for the destination repository. Defaults to "main"
-        target-branch: gh-pages
-      
+      - name: Build Project
+        run: npm run build --if-present
+
+      - name: Publish to gh-pages
+        if: github.event_name != 'pull_request'
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.PUBLISH_GHPAGES_SECRET }}
+        with:
+          # Source directory from the origin directory
+          source-directory: "build"
+          # Name of the destination username/organization
+          destination-github-username: CefView
+          # Destination repository
+          destination-repository-name: QCefView
+          # Email for the git commit
+          user-email: sheentianshen@gmail.com
+          # [Optional] set target branch name for the destination repository. Defaults to "main"
+          target-branch: gh-pages
