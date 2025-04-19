@@ -1,18 +1,30 @@
 {
-  "version.label": {
-    "message": "下一节",
-    "description": "The label for version current"
-  },
-  "sidebar.default.category.Getting Started": {
+  "sidebar.docsSidebar.category.Getting Started": {
     "message": "快速开始",
-    "description": "The label for category Getting Started in sidebar default"
+    "description": "The label for category Getting Started in sidebar docsSidebar"
   },
-  "sidebar.default.category.Guide": {
+  "sidebar.docsSidebar.category.Getting Started.link.generated-index.description": {
+    "message": "构建QCefView",
+    "description": "The generated-index page description for category Getting Started in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Guide": {
     "message": "指引",
-    "description": "The label for category Guide in sidebar default"
+    "description": "The label for category Guide in sidebar docsSidebar"
   },
-  "sidebar.default.category.Reference": {
-    "message": "API文档",
-    "description": "The label for category Reference in sidebar default"
+  "sidebar.docsSidebar.category.Guide.link.generated-index.description": {
+    "message": "让我们一步一步地创建一个应用，借此来熟悉QCefView的能力。",
+    "description": "The generated-index page description for category Guide in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Reference": {
+    "message": "API参考",
+    "description": "The label for category Reference in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Reference.link.generated-index.description": {
+    "message": "C++类和Javascript接口",
+    "description": "The generated-index page description for category Reference in sidebar docsSidebar"
+  },
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
   }
 }

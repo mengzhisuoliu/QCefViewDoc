@@ -1,20 +1,27 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github");
-const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "QCefView",
-  tagline: "A QWidget-based Web View Component Integrated with CEF",
+  tagline: "A QWidget-based WebView Component Integrated with CEF",
+  favicon: "img/favicon.ico",
+
+  // Set the production url of your site here
   url: "https://CefView.github.io",
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/QCefView/",
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: "facebook", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
+
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "cefview", // Usually your GitHub org/user name.
-  projectName: "qcefview", // Usually your repo name.
 
   i18n: {
     defaultLocale: "en",
@@ -49,27 +56,15 @@ const config = {
       navbar: {
         title: "QCefView",
         logo: {
-          alt: "QCefView Logo",
           src: "img/logo.svg",
         },
+
         items: [
           {
-            type: "doc",
-            docId: "intros/index",
+            type: "docSidebar",
+            sidebarId: "docsSidebar",
             position: "left",
-            label: "Getting Started",
-          },
-          {
-            type: "doc",
-            docId: "guide/index",
-            position: "left",
-            label: "Guide",
-          },
-          {
-            type: "doc",
-            docId: "reference/index",
-            position: "left",
-            label: "Reference",
+            label: "Docs",
           },
           {
             type: "localeDropdown",
@@ -83,8 +78,8 @@ const config = {
         ],
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 };

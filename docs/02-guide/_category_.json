@@ -1,0 +1,8 @@
+{
+  "position": 2,
+  "label": "Guide",
+  "link": {
+    "type": "generated-index",
+    "description": "Let's start building an application step by step and explore the capabilities of QCefView."
+  }
+}
