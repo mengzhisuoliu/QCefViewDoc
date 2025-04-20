@@ -9,5 +9,5 @@ This website is deployed at **https://cefview.github.io/QCefView/**
 1. generate XML files with doxygen 
 
 2. convert MXL to markdown
-npm run moxygen -- -c -a -H -o "%s.md" xml
+npm run moxygen -- -c -a -H -o "docgen\md\%s.md" "docgen\xml"
 ```

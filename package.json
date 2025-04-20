@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "moxygen": "moxygen",
+    "moxygen": "moxygen -c -a -H -o \"xmd\\md\\%s.md\" \"xmd\\xml\"",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.12.0" xml:lang="en-US">
+  <compounddef id="_q_cef_view_8h" kind="file" language="C++">
+    <compoundname>QCefView.h</compoundname>
+    <includes refid="_q_cef_view__global_8h" local="no">QCefView_global.h</includes>
+    <includes local="no">QScopedPointer</includes>
+    <includes local="no">QVariantList</includes>
+    <includes local="no">QWidget</includes>
+    <includes local="no">QWindow</includes>
+    <includes refid="_q_cef_download_item_8h" local="no">QCefDownloadItem.h</includes>
+    <includes refid="_q_cef_event_8h" local="no">QCefEvent.h</includes>
+    <includes refid="_q_cef_query_8h" local="no">QCefQuery.h</includes>
+    <includes refid="_q_cef_setting_8h" local="no">QCefSetting.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>QCefView.h</label>
+        <link refid="_q_cef_view_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>QScopedPointer</label>
+      </node>
+      <node id="3">
+        <label>QVariantList</label>
+      </node>
+      <node id="4">
+        <label>QWidget</label>
+      </node>
+      <node id="5">
+        <label>QWindow</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_q_cef_view" prot="public">QCefView</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_q_cef_view_8h_1aa777d6fc375d0b946818bfb17c3292df" prot="public" static="no">
+        <name>QCefBrowserId</name>
+        <initializer>int</initializer>
+        <briefdescription>
+<para>Type alias for CEF browser id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sheen/Source/GitHub/CefView/QCefView/include/QCefView.h" line="29" column="9" bodyfile="C:/Users/sheen/Source/GitHub/CefView/QCefView/include/QCefView.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_q_cef_view_8h_1a9f68e892e3db80ea20e887e4ac50de5b" prot="public" static="no">
+        <name>QCefFrameId</name>
+        <initializer>QString</initializer>
+        <briefdescription>
+<para>Type alias for CEF frame id. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/sheen/Source/GitHub/CefView/QCefView/include/QCefView.h" line="37" column="10" bodyfile="C:/Users/sheen/Source/GitHub/CefView/QCefView/include/QCefView.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/sheen/Source/GitHub/CefView/QCefView/include/QCefView.h"/>
+  </compounddef>
+</doxygen>
